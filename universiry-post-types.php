@@ -58,7 +58,7 @@ function university_post_types() {
       'menu_icon' => 'dashicons-awards',
       'supports' => array(
         'title',
-        'editor',
+        //'editor',
         'excerpt',
       ),
   ));
