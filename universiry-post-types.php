@@ -4,6 +4,8 @@
 function university_post_types() {
   // Campus post type
   register_post_type('campus', array(
+    //'capability_type' => 'campus',
+    //'map_meta_cap' => true,
     'has_archive' => true,
     'public' => true,
     'rewrite' => array('slug', 'campuses'),
@@ -24,6 +26,8 @@ function university_post_types() {
 
   // Event post type
   register_post_type('event', array(
+      //'capability_type' => 'event', // Activa permisos de capabilities
+      //'map_meta_cap' => true, // Indica a WP que conceda permisos a CPT events para editar...
       'has_archive' => true,
       'public' => true,
       'rewrite' => array('slug', 'events'),
